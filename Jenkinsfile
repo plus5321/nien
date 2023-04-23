@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Cloning repository') {
             steps {
-                bat 'xcopy /S "*" "D:/codey/Xamp/htdocs/exp4" /Y'
+                bat 'xcopy C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\devop * C:\\Xamp\\htdocs\\devops practical exp 4 /Y /S'
             }
         }
         stage('printing done') {
